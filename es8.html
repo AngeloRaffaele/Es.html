@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizioN.8</title>
+    <style>
+        label {
+          display: block;
+        }
+      </style>
+</head>
+<body>
+    <form action="#">
+      <div>
+        <label for="form-email">Email</label>
+        <input type="email" id="form-email" name="email" required ><br>
+        <label for="form-pass">Password</label>
+        <input type="password" id="form-pass" name="pass" required >
+      </div>
+      <div>
+        <label for="form-name">Name and surname</label>
+        <input type="text" id="form-name" name="name" required ><br>
+        <label for="form-dob">Date of birth</label>
+        <input type="date" id="form-dob" name="dob" required ><br>
+        <label for="form-tel">Phone number</label>
+        <input type="tel" id="form-tel" name="tel" required ><br>
+      </div>
+      <div>
+        <label for="form-plan">Plans</label>
+        <select id="form-plan" name="plan" required >
+          <option value="0">Free</option>
+          <optgroup label="Monthly">
+            <option value="199">1.99€/month</option>
+            <option value="499">5.99€/month</option>
+            <option value="899">11.99€/month</option>
+          </optgroup>
+        </select>
+        <label for="form-pro">PRO plan</label>
+        <input id="form-pro" name="pro" type="checkbox" required ><br>
+      </div>
+      <div>
+        <label for="form-cc">Credit card number</label>
+        <input id="form-cc" name="cc" type="text" required >
+        <br>
+        <label for="form-cvc">CVC</label>
+        <input id="form-cvc" name="cvc" type="text" minlength="6" maxlength="15" required >
+        <br>
+        <label for="form-exp">Expiration date</label>
+        <input id="form-exp" name="exp" type="date" required >
+        <br>
+        <label for="form-address">Address</label>
+        <input type="text" id="form-address" name="address" required >
+        <br>
+      </div>
+      <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
