@@ -7,62 +7,61 @@
     label {
       background-color: rgb(91, 197, 132);
       border: 1px solid black
-    
-    };
+    }
+
+    ;
   </style>
 </head>
 
 <body>
   <form>
     <div>
-      <label for="Email">Email:</label>
-      <input type="text" name="Email" />
+      <label for="email">Email:</label>
+      <input id="email" type="text" name="email" />
     </div>
-    <br>
+
     <div>
-      <label for="Password">Password:</label>
-      <input type="password" name="password" />
+      <label for="password">Password:</label>
+      <input id="password" type="password" name="password" />
     </div>
-    <br>
-    <label for="Name">Name:</label>
-    <input type="text" name="Name" />
-    <label for="Last Name">Last Name:</label>
-    <input type="text" name="Last Name" />
     <div>
-      <br>
-      <label for="Date of Birth">Date of Birth:</label>
-      <input type="date" name="Date of Birth" />
+      <label for="name">Name:</label>
+      <input id="name" type="text" name="Name" />
+      <label for="last-name">Last Name:</label>
+      <input id="last-name" type="text" name="Last Name" />
     </div>
-    <br>
-    <label for="Telephone Number">Telephone Number:</label>
-    <input type="number" name="Telephone Number" />
-    <br>
-    <br>
-    <label for="PlaneSelect">Choose your Plan:</label>
-    <select name="Choose your Plane" id="PlaneSelect">
-      <option value="Free Plan">Free Plan: GRATIS</option>
-      <option value="3 plans with increasing price">3 plans: $60</option>
-      <option value="">
-        <label for="PRO">PRO Plan: $100</label>
-        <input type="checkbox" id="PRO" name="PRO Plan" value="PRO" />
-      </option>
-    </select>|
-    <br>
-    <br>
-    <label for="Credit Card Number">Credit Card Number:</label>
-    <input type="number" name="Credit Card Number" />
-    <br>
-    <br>
-    <label for="CVC">CVC:</label>
-    <input type="number" name="CVC" />
-    <br>
-    <br>
-    <label for="Expiration date">Expiration Date:</label>
-    <input type="date" name="Expiration date" />
-    <br>
-    <br>
-    <label for="Billing Address">Billing Address:</label>
-    <input type="text" name="Billing Address" />
+    <div>
+      <label for="birth_date">Date of Birth:</label>
+      <input id="birth_date" type="date" name="birth_date" />
+    </div>
+    <div>
+      <label for="telephone">Telephone Number:</label>
+      <input id="telephone" type="number" name="telephone Number" />
+    </div>
+    <div>
+      <label for="planeSelect">Choose your Plan:</label>
+      <select name="plane" id="laneSelect">
+        <option value="free_plan">Free Plan: GRATIS</option>
+        <option value="basic_plan">3 plans: $60</option>
+        <option value="pro_plan">PRO Plan: $100</option>
+      </select>|
+    </div>
+    <div>
+      <label for="credit-card-number">Credit Card Number:</label>
+      <input id="credit-card-number" type="number" name="credit Card Number" />
+    </div>
+    <div>
+      <label for="cvc">CVC:</label>
+      <input id="cvc" type="number" name="cvc" />
+    </div>
+    <div>
+      <label for="expiration-date">Expiration Date:</label>
+      <input id="expiration-date" type="date" name="expiration date" />
+    </div>
+    <div>
+      <label for="billing-address">Billing Address:</label>
+      <input id="billing-address" type="text" name="billing Address" />
+    </div>
   </form>
 </body>
 
