@@ -1,0 +1,61 @@
+.all{
+    height: 100vh;
+    width: 200px;
+    background-color: rgb(43, 130, 71);
+    flex-direction: column;
+    display:flex;
+    justify-content: space-between;
+    border: 3px solid rgb(248, 12, 12);
+}
+.up{
+    width: 100%;
+    height: auto;
+}
+
+#pizza{
+    width: 100%;
+
+}
+
+.avatar{
+    flex-direction: row;
+    display:flex;
+    justify-content: center;
+}
+
+#pizza1{
+    width: 50%;
+
+}
+
+.links{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.si{
+    display: flex;
+    justify-content: space-between;
+    width:50%;
+    flex-direction: column;
+}
+
+a{
+    color: #2b2b2b;
+}
+
+a:hover{
+    color: #2b2bb2;
+    transition: 0.3s;
+}
+
+.nickname{
+    flex-direction: row;
+    display:flex;
+    justify-content: center;
+
+
+}
