@@ -12,18 +12,17 @@ section{
 }
 
 div{
-    border: 1px;
     margin: 0;
     text-align: center;
     font-size: 15px;
     background-color:whitesmoke ;
-    border: 1px black;
+    border: 1px solid black;
 }
 
 .grid-container{
     display: grid;
     grid-template-columns: 50px 50px;
-    border: 1px black;
+    border: 1px solid black;
 }
 
 .itemr {
