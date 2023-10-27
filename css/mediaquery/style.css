@@ -1,0 +1,39 @@
+.card {
+    border: 2px solid black;
+    display: inline-block;
+    background-color: azure;
+    padding: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.card-Heder {
+    border: 1px solid black;
+
+}
+
+.card-articole {
+    border: 1px solid black;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-items-item {
+    border: 1px solid black;
+
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        background-color: lightblue;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
