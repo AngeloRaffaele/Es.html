@@ -2,15 +2,6 @@ body{
     width: 200px;
     height: 200px;
 }
-
-section{
-    border: 1px solid black;
-    margin-bottom: 1rem ;
-    position: relative;
-    width: 200px;
-    height: 200px;
-}
-
 div{
     margin: 0;
     text-align: center;
