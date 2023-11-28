@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <script>
+        const init = () =>{
+            try {
+                const padreUl = document.querySelector("ul").parentElement;
+       console.log("il padre è:",padreUl);
+
+       const figlio2 = document.querySelector("ul").children[1];
+       console.log(figlio2);
+
+       const fratelloSucc = figlio2.nextElementSibling;
+       console.log(fratelloSucc);
+
+       const fratelloPrec = figlio2.previousElementSibling;
+       console.log(fratelloPrec);
+            } catch (error) {
+                console.log(error.message);
+            }
+        }
+        init();
+    </script>
+</body>
+
+</html>
