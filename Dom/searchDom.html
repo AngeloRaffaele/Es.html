@@ -14,7 +14,7 @@ Infine recuperare l'elemento forme aggiungere l'attributo data-person contenente
 
     <body>
         <div id="container">
-            <form>
+            <form id="form">
                 <div>
                     <label>First Name:</label>
                     <input type="text" class="form-input" id="firstName" value="Mario" placeholder="firstName" />
@@ -31,29 +31,25 @@ Infine recuperare l'elemento forme aggiungere l'attributo data-person contenente
         </div>
 
         <script>
-            const attribute = {
-                firtname: "",
-                lastname: "",
-                age: "",
+
+            const $inputForm = document.querySelectorAll(".form-input");
+            const $form = document.querySelector("#form");
+
+            const person = JSON.stringify({
+                firtname: $inputForm[0].value,
+                lastname: $inputForm[1].value,
+                age: $inputForm[2].value,
+            });
+
+            console.log(person);
+
+            const attribute = () => {
+                return $form.setAttribute("data-person", "person");
             }
 
-            attribute.firtname = document.querySelector("#firstName");
-            attribute.age = document.querySelector("#age");
-            attribute.lastname = document.querySelector("#lastName");
+            attribute();
+            //COLLABORAZIONE CON FRANCESCO 
 
-            const cerca = () => {
-                try {
-                    const data1 =attribute.firtname;
-                    console.log(data1);
-                    const data2 =attribute.lastname;
-                    console.log(data2);
-                    const data3 =attribute.age;
-                    console.log(data3);
-                } catch (error) {
-                    console.log(error.message);
-                }
-            }
-            cerca();
         </script>
     </body>
 </body>
