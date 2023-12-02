@@ -15,8 +15,7 @@ const addProduct = () => {
     const newLi = document.createElement("li");
     newLi.innerHTML = `
     <input type = "checkbox"/>
-    <label>${state.inputTask}</label>
-`;
+    <label>${state.inputTask}</label>`;
     $list.appendChild(newLi);
     $input.value = "";
 };
