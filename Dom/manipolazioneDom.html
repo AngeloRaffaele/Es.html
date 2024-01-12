@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>To-do List</h1>
+        <input type="text" placeholder="Scrivi..." />
+        <button onclick="addProduct()">Aggiungi</button>
+        <ul></ul>
+    </div>
+    <script>
+
+    const addProduct = () => {
+            const $myList = document.querySelector("ul");
+            const $myInput = document.querySelector("input");
+            const $inputValue = $myInput.value;
+
+            if ($inputValue === "") {
+                $myInput.placeholder = "Aggiungi";
+                setTimeout(() => {
+                    $myInput.placeholder = "";
+                }, 1000);
+            } else {
+                const $newLi = document.createElement("li");
+                const $newLiCheckbox = document.createElement("input");
+
+                $newLiCheckbox.type = "checkbox";
+                $newLi.appendChild($newLiCheckbox);
+                $newLi.appendChild(document.createTextNode($inputValue));
+                $myList.appendChild($newLi);
+            }
+        };
+    </script>
+</body>
+
+</html>
