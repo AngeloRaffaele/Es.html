@@ -9,15 +9,21 @@ function caricaModulo(modulo) {
         }
       }, tempoCaricamento);
     });
-  }
+  };
 
-  const init = async () => {
-    try {
-        const result = await caricaModulo();
-        console.log(result);
-    } catch (error) {
-        console.log(error.massage);
-    }
-}
+async function init() {
+  try {
+    const A = await caricaModulo("A");
+    console.log(A);
+    const B = await caricaModulo("B");
+    console.log(B);
+    const C = await caricaModulo("C");
+    console.log(C);
+    const messaggioFinale = "Veicolo spaziale pronto per il lancio!";
+    console.log(messaggioFinale);
+  } catch (error) {
+    console.log(error);
+  }
+};
 
 init();
