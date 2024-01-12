@@ -14,24 +14,15 @@
         <li>3</li>
     </ul>
     <script>
-        const init = () =>{
-            try {
-                const padreUl = document.querySelector("ul").parentElement;
-       console.log("il padre è:",padreUl);
+        const $html = document.documentElement;
+        const $body = $html.children[1];
+        const $ul = $body.children[0];
+        const $li2 = $ul.children[1];
 
-       const figlio2 = document.querySelector("ul").children[1];
-       console.log(figlio2);
-
-       const fratelloSucc = figlio2.nextElementSibling;
-       console.log(fratelloSucc);
-
-       const fratelloPrec = figlio2.previousElementSibling;
-       console.log(fratelloPrec);
-            } catch (error) {
-                console.log(error.message);
-            }
-        }
-        init();
+        console.log($li2.previousElementSibling);
+        console.log($ul.children[1]);
+        console.log($li2.nextElementSibling);
+        console.log($ul.parentElement);
     </script>
 </body>
 
