@@ -5,9 +5,8 @@ function caricaModulo(modulo) {
       }, 2000);
     });
   }
-
-  
-async function lanciaVeicoloSpaziale() {
+ 
+async function init() {
   try {
     const A = await caricaModulo("A");
     console.log(A);
@@ -22,4 +21,4 @@ async function lanciaVeicoloSpaziale() {
   }
 }
 
-lanciaVeicoloSpaziale();
+init();
